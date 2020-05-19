@@ -1,0 +1,229 @@
+/*reset do css*/
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+body {
+  background: black;
+  background-size:auto 100vh;
+}
+/*responsividade do site*/
+@media (min-width: 400px) {
+  font-size:14px;
+}
+
+@media (min-width: 600px) {
+  font-size:18px;
+}
+
+
+header{
+  height:40vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+}
+
+h1 {
+  color: green;
+}
+    h2 {
+  color: green;
+  }
+      p {
+  color: green;
+  padding:10px;
+  text-align:center;
+}
+
+/*aqui começa o menu do nav*/
+.menu{
+position:fixed;
+widght:100vw;
+top:0;
+z-index: 1;
+}
+
+.menu  a{
+  text-decoration:none;
+  display:block;
+  padding:10px 20px;
+
+}
+.menu  a:hover{
+  text-decoration:underline;
+  background-color:#002300;
+}  
+
+.menu li{
+  float: left;
+}
+.menu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.menu li a{
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: arial;
+  font-weight:bold;
+}
+/*aqui termina o menu nav*/ 
+
+.site-title,.site-subtitle{
+  text-align:center;
+}
+
+
+
+.site-subtitle{
+  font-style:italic;
+}  
+
+
+.img-portfolio {
+  width:180px;
+  height:150px;
+}
+
+
+
+.topicos{
+  padding:14px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+p{
+  
+ font-family: 'Source Code Pro', monospace;
+}
+
+
+.grid{
+  display:grid;
+  gap:1em;
+  text-align:center;
+  justify-content:center;
+  align-content: center;
+ }
+ 
+ @media(min-width:560px){
+  .grid{
+     grid-template-columns:240px 240px;
+  }}
+  
+
+
+@media(min-width:760px){
+  .grid{
+  grid-template-columns:240px 240px 240px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  
+  }}
+
+  @media(min-width:1024px){
+    .grid{
+      text-align: center;
+      grid-template-columns:240px 240px 240px 240px;
+    }}
+
+.img-portfolio{
+  width:100%;
+  height:180px;
+ 
+  transition: transform 500ms;
+}
+
+
+
+.contato a {
+  color: whitesmoke;
+  font-size: 3em;
+  opacity: 0.7;
+  text-align:right;
+  justify-content:right;
+  align-content: right;
+
+}
+.contato a:hover{
+ opacity: 1;
+}
+.grid-icons{
+  text-align:right;
+  justify-content:right;
+  align-content: right;
+}
+ .sobre p{
+
+  font-family: 'Source Code Pro', monospace;
+ text-indent: 2em;
+ margin-bottom: 1.4em;
+ text-align: justify;
+  margin-left: auto;
+
+  margin-right: auto;
+}
+
+ @media(min-width:1200px){
+.sobre{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ }
+ 
+
+
+
+.profile{
+  width:180px;
+  height:150px;
+  float: right;
+  margin-left: 2em;
+  border-radius: 10%;
+}
+
+
+
+.parte{
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+}
+
+.flip-card{
+  perspective: 500px;
+}
+
+
+.flip-card:hover  .parte{
+  transform: rotateY(180deg);
+
+}
+
+.parte-da-frente, .parte-de-tras{
+   backface-visibility: hidden;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.parte-de-tras
+{
+  background-color:whitesmoke;
+  font-family: 'Balsamiq Sans', cursive;
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
+}
